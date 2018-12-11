@@ -336,15 +336,14 @@
 </div>
 
 <script src="./js/jquery-3.1.1.min.js"></script>
-<script src="./js/lightslider.min.js"></script>
 <script src="./js/swiper.js"></script>
 <script>
 
 	$(document).ready(function() {
 		// Hide Header on on scroll down var didScroll;
-		var lastScrollTop = 0;
-		var delta = 5;
-		var navbarHeight = $('.header').outerHeight();
+		let lastScrollTop = 0;
+		let delta = 5;
+		let navbarHeight = $('.header').outerHeight();
 
 		$(window).scroll(function(event){ 
 			didScroll = true;
@@ -356,7 +355,7 @@
 			}
 		 }, 250);
 		 function hasScrolled() { 
-			 var st = $(this).scrollTop(); 
+			let st = $(this).scrollTop(); 
 			if(Math.abs(lastScrollTop - st) <= delta)
 			return; 
 			if (st > lastScrollTop && st > navbarHeight){ 
@@ -364,17 +363,17 @@
 				$('.header').removeClass('nav-down').addClass('fixed'); 
 				$('.footer-btn').addClass('fixed');
 				$('body').addClass('bottom-fix');
-				} else { 
-				// Scroll Up 
-				if(st + $(window).height() < $(document).height()) { 
-					$('.header').removeClass('fixed').addClass('nav-down'); 
-					$('.footer-btn').removeClass('fixed');
-					$('body').removeClass('bottom-fix');
-					
-				}
-			} 
-			lastScrollTop = st; 
-		}
+			} else { 
+			// Scroll Up 
+			if(st + $(window).height() < $(document).height()) { 
+				$('.header').removeClass('fixed').addClass('nav-down'); 
+				$('.footer-btn').removeClass('fixed');
+				$('body').removeClass('bottom-fix');
+				
+			}
+		} 
+		lastScrollTop = st; 
+	}
 
 		// gnb 액션
 		let $gnb = $('.js-gnb');
@@ -402,6 +401,7 @@
 		centeredSlides: false,
 		loop:true
 		});
+		
 		// 견적 신청 체크박스
 		$('.estimate-val').find('input:radio').click(function() { 
 			if($(this).is(":checked")){
