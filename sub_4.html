@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+<header class="header">
+	<section class="common-layout">
+	<h1 class="logo"></h1>
+	<nav class="nav"><button type="button" class="btn-nav js-btn-nav"></button></nav>
+	<div class="gnb js-gnb">
+		<ul>
+			<li><a href="./main.html">홈</a></li>
+			<li><a href="./sub_1.html">포트폴리오</a></li>
+			<li><a href="./sub.html">회사소개</a></li>
+			<li><a href="sub_4.html">방문 · 견적문의</a></li>
+		</ul>
+	</div>
+</section>
+
+</header>
+<!-- sub 공통 container -->
+<section class="container">
+	<!-- 타이틀 -->
+	<section class="title-wrap">
+		<section class="common-layout">
+			<div class="est-title">무료견적신청</div>
+			<div class="est-title-text">
+				<ul>
+					<li>지금 바로 견적을 신청해주세요!</li>
+					<li>간단한 양식을 작성해주시면 담당자가 확인후</li>
+					<li>견적서를 보내드립니다.</li>
+				</ul>
+			</div>
+		</section>
+	</section>
+	<!-- //타이틀 -->
+	<!-- 본문 -->
+	<section class="contents-wrap">
+		<div class="common-layout">
+			<div class="estimate-wrap">
+				<form action="">
+					<div class="title-style2">간판종류</div>
+					<div class="estimate-val">
+						<div class="est-box active">
+							<div class="radio">
+								<div class="img-sign-type"><img src="./img/m-img-sample-01@2x.png" alt=""></div>
+								<input type="radio" id="radio-1" name="select1"  value="1" checked>
+								<label for="radio-1" >LED간판</label>
+							</div>
+						</div>
+						<div class="est-box">
+							<div class="radio">
+								<div class="img-sign-type"><img src="./img/m-img-sample-02@2x.png" alt=""></div>
+								<input type="radio" id="radio-2" name="select1"  value="2" >
+								<label for="radio-2" >전면형간판</label>
+							</div>
+						</div>
+						<div class="est-box">
+							<div class="radio">
+								<div class="img-sign-type"><img src="./img/m-img-sample-03@2x.png" alt=""></div>
+								<input type="radio" id="radio-3" name="select1"  value="3" >
+								<label for="radio-3" >돌출형간판</label>
+							</div>
+						</div>
+						<div class="est-box">
+							<div class="radio">
+								<div class="img-sign-type"><img src="./img/m-img-sample-04@2x.png" alt=""></div>
+								<input type="radio" id="radio-4" name="select1"  value="4" >
+								<label for="radio-4" >지주형간판</label>
+							</div>
+						</div>
+					</div>
+					<div class="title-style2">신청정보
+						<div class="estimate-subtitle"><span class="essential">*</span>표시는 필수입력 항목입니다.</div>
+					</div>
+					<div class="estimate-val">
+						<div class="table-wrap">
+							<dl class="table-style1">
+								<dt>신청 종류<span class="essential">*</span></dt>
+								<dd class="has-text">
+									<div class="radio">
+										<input type="radio" id="radio-v1" name="selectv"  value="1" checked>
+										<label for="radio-v1" >무료견적신청</label>
+									</div>
+									<div class="radio">
+										<input type="radio" id="radio-v2" name="selectv"  value="2" >
+										<label for="radio-v2" >방문상담신청</label>
+									</div>
+								</dd>
+								<dt>이름<span class="essential">*</span></dt>
+								<dd><input type="text"></dd>
+								<dt>휴대폰번호<span class="essential">*</span></dt>
+								<dd><input type="tel"></dd>
+								<dt>주소<span class="essential">*</span></dt>
+								<dd>
+									<div class="address-wrap">
+										<input type="text" >
+										<button type="button" class="btn-search">검색</button>
+									</div>
+								</dd>
+								<dt>문의내용 <span class="essential">*</span></dt>
+								<dd>
+									<textarea name="" id=""></textarea>
+								</dd>
+								<dt>파일 첨부</dt>
+								<dd>
+									<div class="file-input-wrap">
+										<div class="file-inputbox">
+											<input type="text" id="fileName" class="file-input-textbox" placeholder="첨부는 총 3장까지 가능합니다." readonly >
+											<div class="file-input-div">
+												<div class="file-input-btn">첨부</div>
+												<input type="file" name="file_1" class="file-input-hidden" onchange="javascript: document.getElementById('fileName').value = this.value"/>/>
+											</div>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="graybox-wrap">
+							<div class="checkbox">
+								<input type="checkbox" id="check">
+								<label for="check" >개인정보 수집 및 활용 동의</label>
+							</div>
+							<a href="#link" class="btn-view">[보기]</a>
+						</div>
+						
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="btn-wrap-bottom">
+			<a href="#link" class="btn-estimate2">견적 신청하기</a>
+		</div>
+	</section>
+	<!-- //본문 -->
+</section>
+<!-- sub 공통 container -->
+<!-- footer -->
+<footer class="footer">
+	<section class="common-layout">
+		<div class="footer-info">
+			<ul class="footer-link">
+				<li><a href="">홈</a></li>
+				<li><a href="">회사소개</a></li>
+				<li><a href="">포트폴리오</a></li>
+				<li><a href="">방문 · 견적문의</a></li>
+			</ul>
+		</div>
+		<div class="footer-contact">
+			<p class="footer-contact-title">고객문의 / 중개사 제휴문의</p>
+			<ul class="footer-contact-list">
+				<li class="footer-tel">1566-4096</li>
+				<li>FAX : 02-540-4096</li>
+				<li>Email : ott32@duse.co.kr</li>
+			</ul>
+			<div class="company-info">
+				<ul>
+					<li>(주)두꺼비세상<span class="ml10">대표:유광연</span></li>
+					<li>서울특별시 강남구 선릉로 129길 9-8 1층</li>
+					<li>사업자등록번호:210-85-29066</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-row">
+			<div class="footer-logo"><img src="./img/img-logo-w@2x.png" alt=""></div>
+		</div>
+		
+	</section>
+</footer>
+<!-- //footer -->
+<div class="footer-btn">
+	<ul>
+		<li><a href="tel:1566-4096"><span class="icon-call"></span>전화문의</a></li>
+		<li><a href="./sub_4.html"><span class="icon-councel"></span>견적문의</a></li>
+	</ul>
+</div>
+
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/lightslider.min.js"></script>
+<script src="./js/swiper.js"></script>
+<script>
+
+	$(document).ready(function() {
+		// Hide Header on on scroll down var didScroll;
+		var lastScrollTop = 0;
+		var delta = 5;
+		var navbarHeight = $('.header').outerHeight();
+
+		$(window).scroll(function(event){ 
+			didScroll = true;
+		});
+		setInterval(function() { 
+			if (didScroll) { 
+				hasScrolled();
+				didScroll = false; 
+			}
+		 }, 250);
+		 function hasScrolled() { 
+			 var st = $(this).scrollTop(); 
+			if(Math.abs(lastScrollTop - st) <= delta)
+			return; 
+			if (st > lastScrollTop && st > navbarHeight){ 
+				// Scroll Down
+				$('.header').removeClass('nav-down').addClass('fixed'); 
+				$('.footer-btn').addClass('fixed');
+				$('body').addClass('bottom-fix');
+				} else { 
+				// Scroll Up 
+				if(st + $(window).height() < $(document).height()) { 
+					$('.header').removeClass('fixed').addClass('nav-down'); 
+					$('.footer-btn').removeClass('fixed');
+					$('body').removeClass('bottom-fix');
+					
+				}
+			} 
+			lastScrollTop = st; 
+		}
+
+		// gnb 액션
+		let $gnb = $('.js-gnb');
+		$gnb.hide();
+		$('.js-btn-nav').on('click',function(){
+			if($gnb.is(':hidden')){
+				$gnb.stop().slideDown();
+			}else {
+				$gnb.stop().slideUp();
+			}
+		})
+		// main 슬라이더
+		var swiper = new Swiper('.js-mainslider', {
+			slidesPerView: 1,
+			dynamicBullets: true,
+			pagination: {
+				el: '.main-slider-pagenation',
+			},
+		});
+		// 포트폴리오 슬라이더
+		var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 1,
+		width:240,
+		spaceBetween: 20,
+		centeredSlides: false,
+		loop:true
+		});
+		// 견적 신청 체크박스
+		$('.estimate-val').find('input:radio').click(function() { 
+			if($(this).is(":checked")){
+				$('.est-box').removeClass('active');
+				$(this).parent('.radio').parent('.est-box').addClass('active');
+			}
+		}) 
+
+	});
+
+</script>
+</body>
+</html>
