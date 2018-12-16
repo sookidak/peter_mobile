@@ -218,7 +218,7 @@
 			</ul>
 		</div>
 		<div class="footer-contact">
-			<p class="footer-contact-title">고객문의 / 중개사 제휴문의</p>
+			<p class="footer-contact-title">피터팬의 좋은간판 고객문의</p>
 			<ul class="footer-contact-list">
 				<li class="footer-tel">1566-4096</li>
 				<li>FAX : 02-540-4096</li>
@@ -240,10 +240,15 @@
 </footer>
 <!-- //footer -->
 <div class="footer-btn">
-	<ul>
-		<li><a href="tel:1566-4096"><span class="icon-call"></span>전화문의</a></li>
-		<li><a href="./sub_4.html"><span class="icon-councel"></span>견적문의</a></li>
-	</ul>
+	<div class="footer-btn-top">
+		<button type="button" class="footer-btn-kakao"><img src="./img/m-icon-kakao@2x.png" alt=""></button>
+	</div>
+	<div class="footer-btn-bottom">
+		<ul>
+			<li><a href="tel:1566-4096"><span class="icon-call"></span>전화문의</a></li>
+			<li><a href="./sub_4.html"><span class="icon-councel"></span>견적문의</a></li>
+		</ul>
+	</div>
 </div>
 
 <script src="./js/jquery-3.1.1.min.js"></script>
@@ -255,6 +260,7 @@
 		let lastScrollTop = 0;
 		let delta = 5;
 		let navbarHeight = $('.header').outerHeight();
+		let didScroll = true;
 
 		$(window).scroll(function(event){ 
 			didScroll = true;
@@ -288,12 +294,30 @@
 
 		// gnb 액션
 		let $gnb = $('.js-gnb');
+		let $header = $('.header');
 		$gnb.hide();
 		$('.js-btn-nav').on('click',function(){
 			if($gnb.is(':hidden')){
-				$gnb.stop().slideDown();
+				
+				if($header.hasClass('main')){
+					$header.removeClass('main').addClass('mainopen');
+				}else{
+					$('.header').addClass('open');
+				}
+				setTimeout( function(){
+					$gnb.stop().slideDown(300);
+				},100);
 			}else {
-				$gnb.stop().slideUp();
+				$gnb.stop().slideUp(300);
+				if($header.hasClass('mainopen')){
+					setTimeout( function(){
+						$('.header').addClass('main').removeClass('mainopen');
+					},400);
+				}else{
+					$('.header').removeClass('open');
+				}
+				
+				
 			}
 		})
 		// main 슬라이더

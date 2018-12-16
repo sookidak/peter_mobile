@@ -118,6 +118,20 @@
 											</div>
 										</div>
 									</div>
+									<div class="file-input-img">
+										<div class="input-img-box">
+											<img src="./img/img_view2.jpg" alt="">
+											<button type="button" class="btn-del">
+										</div>
+										<div class="input-img-box">
+											<img src="./img/img_view2.jpg" alt="">
+											<button type="button" class="btn-del">
+										</div>
+										<div class="input-img-box">
+											<img src="./img/img_view2.jpg" alt="">
+											<button type="button" class="btn-del">
+										</div>
+									</div>
 								</dd>
 							</dl>
 						</div>
@@ -133,51 +147,16 @@
 				</form>
 			</div>
 		</div>
-		<div class="btn-wrap-bottom">
-			<a href="#link" class="btn-estimate2">견적 신청하기</a>
-		</div>
+		
 	</section>
 	<!-- //본문 -->
 </section>
 <!-- sub 공통 container -->
-<!-- footer -->
-<footer class="footer">
-	<section class="common-layout">
-		<div class="footer-info">
-			<ul class="footer-link">
-				<li><a href="">홈</a></li>
-				<li><a href="">회사소개</a></li>
-				<li><a href="">포트폴리오</a></li>
-				<li><a href="">방문 · 견적문의</a></li>
-			</ul>
-		</div>
-		<div class="footer-contact">
-			<p class="footer-contact-title">고객문의 / 중개사 제휴문의</p>
-			<ul class="footer-contact-list">
-				<li class="footer-tel">1566-4096</li>
-				<li>FAX : 02-540-4096</li>
-				<li>Email : ott32@duse.co.kr</li>
-			</ul>
-			<div class="company-info">
-				<ul>
-					<li>(주)두꺼비세상<span class="ml10">대표:유광연</span></li>
-					<li>서울특별시 강남구 선릉로 129길 9-8 1층</li>
-					<li>사업자등록번호:210-85-29066</li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer-row">
-			<div class="footer-logo"><img src="./img/img-logo-w@2x.png" alt=""></div>
-		</div>
-		
-	</section>
-</footer>
-<!-- //footer -->
+
 <div class="footer-btn">
-	<ul>
-		<li><a href="tel:1566-4096"><span class="icon-call"></span>전화문의</a></li>
-		<li><a href="./sub_4.html"><span class="icon-councel"></span>견적문의</a></li>
-	</ul>
+	<div class="btn-wrap-bottom">
+		<a href="#link" class="btn-estimate2">견적 신청하기</a>
+	</div>
 </div>
 
 <script src="./js/jquery-3.1.1.min.js"></script>
@@ -198,8 +177,8 @@
 				hasScrolled();
 				didScroll = false; 
 			}
-		 }, 250);
-		 function hasScrolled() { 
+			}, 250);
+			function hasScrolled() { 
 			let st = $(this).scrollTop(); 
 			if(Math.abs(lastScrollTop - st) <= delta)
 			return; 
